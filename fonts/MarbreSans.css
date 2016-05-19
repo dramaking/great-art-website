@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MarbreSans';
+    src: url('fonts/MarbreSans.eot');
+    src: url('fonts/MarbreSans.eot') format('embedded-opentype'),
+         url('fonts/MarbreSans.woff2') format('woff2'),
+         url('fonts/MarbreSans.woff') format('woff'),
+         url('fonts/MarbreSans.ttf') format('truetype'),
+         url('fonts/MarbreSans.svg#MarbreSans') format('svg');
+}

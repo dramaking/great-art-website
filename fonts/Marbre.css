@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Marbre';
+    src: url('fonts/Marbre.eot');
+    src: url('fonts/Marbre.eot') format('embedded-opentype'),
+         url('fonts/Marbre.woff2') format('woff2'),
+         url('fonts/Marbre.woff') format('woff'),
+         url('fonts/Marbre.ttf') format('truetype'),
+         url('fonts/Marbre.svg#Marbre') format('svg');
+}

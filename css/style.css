@@ -1,0 +1,186 @@
+/* Font */
+@font-face {
+    font-family: 'Marbre';
+    src: url('../fonts/Marbre.eot');
+    src: url('../fonts/Marbre.eot') format('embedded-opentype'),
+         url('../fonts/Marbre.woff2') format('woff2'),
+         url('../fonts/Marbre.woff') format('woff'),
+         url('../fonts/Marbre.ttf') format('truetype'),
+         url('../fonts/Marbre.svg#Marbre') format('svg');
+}
+
+@font-face {
+    font-family: 'Marbre-Sans';
+    src: url('../fonts/MarbreSans.eot');
+    src: url('../fonts/MarbreSans.eot') format('embedded-opentype'),
+         url('../fonts/MarbreSans.woff2') format('woff2'),
+         url('../fonts/MarbreSans.woff') format('woff'),
+         url('../fonts/MarbreSans.ttf') format('truetype'),
+         url('../fonts/MarbreSans.svg#MarbreSans') format('svg');
+}
+
+/* General */
+
+body {
+	font-size: 1em;
+	width: 100%;
+	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+h1.big-title {
+	display: inline;
+	font-size: 4.5em;
+	font-family: 'Marbre-Sans', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	border-bottom: 3px solid white;
+	padding: 0 0.5em;
+}
+
+h3.small-title {
+	font-size: 1.75em;
+	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h2.big-title {
+	font-size: 3em;
+	font-family: 'Marbre', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+p {
+	font-size: 1.25em;
+}
+
+a.read-more {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	text-decoration: underline;
+	display: block;
+	padding-top: 1.5em;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	max-width: 68em;
+	width: 100%;
+	height: 4.375em;
+	margin: 0 auto;
+	background-color: #2A1F26;
+	position: relative;
+	top: 0;
+	z-index: 300;
+/*	position: fixed;
+	left: 4%;
+	right: 4%;
+	z-index: 10;*/
+}
+
+.logo-wrapper {
+	width: 18em;
+}
+
+.header-logo{
+	width: 10em;
+	margin: 0 auto;
+
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Main Navigation */
+nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50em;
+	padding-right: 2em;
+}
+
+ul.menu {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.5em;
+	padding-left: 0;
+	
+	margin: 0;
+	font-family: Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Slide Menu */
+.full-section {
+	position: relative;
+	top: -4.375em;
+	width: 100%;
+	height: 47.5em;
+	background-image: url("../images/still-life-self-portrait.jpeg");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.main-title {
+	/*width: 100%;*/
+	text-align: center;
+}
+
+/* Grid */
+.grid-container {
+	display: flex;
+	width: 100%;
+	height: 25em;
+	position: relative;
+	top: -4.375em;
+}
+
+.grid-70 {
+	width: 70%;
+	padding: 2.35em 4.375em;
+}
+
+.grid-30 {
+	width: 30%;
+
+}
+
+/* Full Section */
+.module {
+
+}
+
+.home-story {
+	background: #87614E;
+}
+
+
+
+
+
+/* Content */
+.home-blog {
+	display: flex;
+}
+
+/* Footer */
+footer {
+	position: relative;
+	top: -4.375em;
+}
+
+
+/* Form */
+
+
+
