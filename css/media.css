@@ -1,0 +1,59 @@
+
+
+@media screen and (max-width: 68em) {
+	
+	body {
+		font-size: 0.8em;
+	}
+
+}
+
+@media screen and (max-width: 58em) {
+	body {
+		font-size: 0.7em;
+	}	
+}
+
+@media screen and (max-width: 48em) {
+	.nav-icon {
+		display: block;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.logo-wrapper {
+		width: 80%;
+	}
+
+	.grid-container {
+		display: block;
+		height: 50em;
+	}
+
+	.hidephoto {
+		height: 25em;
+	}
+
+	.grid-70 {
+		width: 100%;
+		height: 25em;
+		padding: 2em 2em;
+	}
+
+	.grid-30 {
+		width: 100%;
+		height: 25em;
+		padding: 2em 2em;
+	}
+
+	.home-easel {
+		display: none;
+	}
+
+	.col-1-4 {
+		margin-right: 2em;
+	}
+
+}

@@ -3,6 +3,10 @@
 	box-sizing: border-box;
 }
 
+h1, h2, h3 {
+	font-weight: normal;
+}
+
 /* Font */
 @font-face {
     font-family: 'Marbre';
@@ -30,6 +34,7 @@ body {
 	font-size: 1em;
 	width: 100%;
 	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: white;
 }
 
 ul {
@@ -49,14 +54,18 @@ h1.big-title {
 	padding: 0 0.5em 0.1em;
 }
 
-h3.small-title {
-	font-size: 1.75em;
-	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
 h2.big-title {
 	font-size: 3em;
 	font-family: 'Marbre', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h2.small-title {
+	font-weight: bold;
+}
+
+h2.small-title, h3.small-title {
+	font-size: 1.75em;
+	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 p {
@@ -75,26 +84,34 @@ a.read-more {
 
 header {
 	display: flex;
-	max-width: 68em;
-	width: 100%;
-	height: 4.375em;
+	max-width: 68rem;/*
+	width: 100%;*/
+	height: 4.375rem;
 	margin: 0 auto;
-	background-color: #2A1F26;
+	background-color: #2A1F26;/*
 	position: relative;
 	top: 0;
-	z-index: 300;
-/*	position: fixed;
-	left: 4%;
-	right: 4%;
-	z-index: 10;*/
+	z-index: 300;*/
+	position: fixed;
+	top: 2rem;
+	left: 1%;
+	right: 1%;
+	z-index: 10;
 }
 
+.nav-icon {
+	font-size: 3.5rem;
+	padding: 0.1rem 1.2rem;
+	display: none;
+}
+
+
 .logo-wrapper {
-	width: 18em;
+	width: 18rem;
 }
 
 .header-logo{
-	width: 10em;
+	width: 10rem;
 	margin: 0 auto;
 
 }
@@ -108,15 +125,15 @@ nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 50em;
-	padding-right: 2em;
+	width: 50rem;
+	padding-right: 2rem;
 }
 
 ul.menu {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	padding-left: 0;
 	
 	margin: 0;
@@ -124,9 +141,9 @@ ul.menu {
 }
 
 /* Slide Menu */
-.full-section {
+.full-section {/*
 	position: relative;
-	top: -4.375em;
+	top: -4.375em;*/
 	width: 100%;
 	height: 47.5em;
 	background-image: url("../images/still-life-self-portrait.jpeg");
@@ -145,9 +162,9 @@ ul.menu {
 .grid-container {
 	display: flex;
 	width: 100%;
-	height: 25em;
+	height: 25em;/*
 	position: relative;
-	top: -4.375em;
+	top: -4.375em;*/
 }
 
 .grid-70 {
@@ -157,7 +174,7 @@ ul.menu {
 
 .grid-30 {
 	width: 30%;
-	padding: 2.35em 4.375em;
+	padding: 2.35em 2.375em;
 
 }
 
@@ -170,6 +187,25 @@ ul.menu {
 	background: #87614E;
 }
 
+.home-easel {
+	background-image: url("../images/Frances-Hodgkins-at-her-easel_600.jpg");
+	background-size: cover;
+}
+
+.home-wings {
+	background-image: url("../images/wings-over-water_home.jpg");
+	background-size: cover;
+}
+
+.home-double {
+	background-image: url("../images/Double-portrait-No_home.jpg");
+	background-size: cover;
+}
+
+.home-jugs {
+	background-image: url("../images/Arrangement-of-jugs_home.jpg");
+	background-size: cover;
+}
 
 
 
@@ -177,16 +213,93 @@ ul.menu {
 /* Content */
 .home-blog {
 	display: flex;
+	color: #000;
+}
+
+.home-blog-color {
+	background-color: #FBFBFB;
+}
+
+.col-1-4 {
+	margin-right: 6em;
+	text-align: center;
+}
+
+.col-3-4 {
+	padding-top: 1em;
+}
+
+.col-3-4 a {
+	color: #000;
+}
+
+.home-blog-title {
+	margin-bottom: 2em;
+}
+
+.blog-day {
+	font-size: 6em;
+	font-family: 'Marbre', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #E87058; 
+	margin: 0;
+}
+
+.blog-month {
+	font-size: 2.25em;
+	font-family: 'Marbre', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* Footer */
-footer {
+footer {/*
 	position: relative;
-	top: -4.375em;
+	top: -4.375em;*/
+	background-color: #2A1F26;
+	height: 40em;
+	text-align: center;
+	padding-top: 7em;
+}
+
+footer .big-title {
+	margin-bottom: 0.5em;
 }
 
 
 /* Form */
+.subscribe-form {
+	height: 5em;
+	width: 90%;
+	/*border: 1px solid #ccc;*/
+	margin: 2em auto;
+}
 
+.subscribe-input {
+	width: 70%;
+	height: 3em;
+	font-size: 1.5em;
+	padding: 1em;
+}
+
+.subscribe-submit {
+	height: 3em;
+	width: 15%;
+	font-size: 1.5em;
+	border-width: 2px;
+}
+
+.site-info {
+	margin-top: 8em;
+}
+
+.site-info, .footer-nav a {
+	color: #7A7A7A;
+}
+
+.footer-nav {
+	display: flex;
+	width: 50%;
+	margin: 3em auto;
+    font-size: 1.2em;
+	justify-content: space-around;
+}
 
 
