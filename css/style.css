@@ -1,3 +1,8 @@
+/* Reset */
+* {
+	box-sizing: border-box;
+}
+
 /* Font */
 @font-face {
     font-family: 'Marbre';
@@ -41,7 +46,7 @@ h1.big-title {
 	font-size: 4.5em;
 	font-family: 'Marbre-Sans', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	border-bottom: 3px solid white;
-	padding: 0 0.5em;
+	padding: 0 0.5em 0.1em;
 }
 
 h3.small-title {
@@ -152,6 +157,7 @@ ul.menu {
 
 .grid-30 {
 	width: 30%;
+	padding: 2.35em 4.375em;
 
 }
 
