@@ -1,12 +1,12 @@
 var main = function() {
 	$('.nav-icon').click(function(event) {
-		$('.slide-menu').animate({
-			left: "0px"
-		}, 200);
+		$(this).find('i').toggleClass('fa-times fa-bars');
 
-	$('body').animate({
-		left: "18rem"
-	}, 200);
+		if ($('.site-wrapper').hasClass('display-nav')) {
+			$('.site-wrapper').removeClass('display-nav');
+		} else {
+			$('.site-wrapper').addClass('display-nav');
+		}
 	});
 };
 
