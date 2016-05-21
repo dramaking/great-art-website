@@ -18,6 +18,10 @@
 		font-size: 0.7em;
 	}	
 
+	header {
+		height: 3.5rem;
+	}
+
 	.nav-icon {
 		display: block;
 	}
@@ -115,6 +119,10 @@
     .footer-nav {
     	flex-direction: column;
     	margin: 1em auto;
+    }
+
+    footer {
+    	padding-top: 5em;
     }
 
 	/*.module {

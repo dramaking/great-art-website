@@ -35,6 +35,7 @@ body {
 	width: 100%;
 	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: white;
+	position: relative;
 }
 
 ul {
@@ -93,8 +94,38 @@ a.read-more:hover {
 }
 
 a.read-more-red:hover {
-	border: 2px solid #CC3935;
+	border: 2px solid #E87058;
 }
+
+/* Animation Effect */
+.image-hover {
+	position: relative;
+	overflow: hidden;
+}
+
+.image-hover:before {
+	content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    background-color: #282828;
+    transition: opacity 0.3s linear;
+}
+
+.module {
+	position: relative;
+	z-index: 2;
+}
+
+.image-hover:hover:before {
+	opacity: 0.7;
+}
+
 
 /* Header */
 
@@ -116,14 +147,18 @@ header {
 }
 
 .nav-icon {
-	font-size: 3rem;
+	font-size: 2.3rem;
     padding: 0.4rem 1.8rem;
 	display: none;
+	/*position: relative;
+	z-index: 2;*/
 }
 
 
 .logo-wrapper {
 	width: 18rem;
+	display: flex;
+	align-items: center;
 }
 
 .header-logo{
@@ -156,7 +191,37 @@ ul.menu {
 	font-family: Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+nav a:hover {
+	text-decoration: underline;
+}
+
 /* Slide Menu */
+.slide-menu {
+	position: fixed;
+	top: 3.5rem;
+	left: -18rem;
+	height: 100%;
+	width: 18rem;
+	background-color: #2A1F26;
+}
+
+.slide-menu-bar {
+	font-size: 1.5rem;
+	margin-top: 2.35em;
+	padding: 0;
+}
+
+.slide-menu-bar li a{
+	line-height: 2em;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    padding: 0.5em 3em;
+    display: block;
+    margin-bottom: -1px;
+}
+
+
+/* Main Banner */
 .full-section {/*
 	position: relative;
 	top: -4.375em;*/
@@ -223,9 +288,6 @@ ul.menu {
 	background-size: cover;
 }
 
-
-
-
 /* Content */
 .home-blog {
 	display: flex;
@@ -273,6 +335,10 @@ footer {/*
 
 footer .big-title {
 	margin-bottom: 0.5em;
+}
+
+.newsletter p {
+	padding: 0.5em;
 }
 
 
