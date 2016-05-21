@@ -6,15 +6,18 @@
 		font-size: 0.8em;
 	}
 
+	header {
+		left: 0;
+		right: 0;
+	}
+
 }
 
 @media screen and (max-width: 58em) {
 	body {
 		font-size: 0.7em;
 	}	
-}
 
-@media screen and (max-width: 48em) {
 	.nav-icon {
 		display: block;
 	}
@@ -26,13 +29,18 @@
 	.logo-wrapper {
 		width: 80%;
 	}
+}
 
-	.grid-container {
-		display: block;
+@media screen and (max-width: 48em) {
+	
+	.grid-container, .blog-container {
+		display: flex;
+		flex-direction: column;
 		height: 50em;
 	}
 
-	.hidephoto {
+	.grid-container-hide {
+		display: block;
 		height: 25em;
 	}
 
@@ -56,4 +64,70 @@
 		margin-right: 2em;
 	}
 
+	.home-jugs {
+		order: -1;
+	}
+
+	.home-blog {
+		flex-direction: column;
+	}
+
+	.col-1-4 {
+		text-align: left;
+	}
+
+	.col-3-4 {
+		padding: 0;
+	}
+
+	.blog-date {
+		display: flex;
+	}
+
+	.blog-container {
+		height: 65em;
+	}
+
+	.home-blog-title {
+		margin: 0.5em 0;
+	}
+
+	.subscribe-form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 10em;
+	}
+
+	.subscribe-input {
+    	width: 100%;
+    	margin-bottom: 1em;
+    }
+
+    .subscribe-submit {
+	    width: 25%;
+	}
+
+	.site-info {
+        margin-top: 3em;
+    }
+
+    .footer-nav {
+    	flex-direction: column;
+    	margin: 1em auto;
+    }
+
+	/*.module {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-around;
+	    height: 100%;
+	}*/
+
+}
+
+@media screen and (max-width: 28em) {
+	h1.big-title {
+		font-size: 3em;
+	}
 }
