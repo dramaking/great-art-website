@@ -426,4 +426,8 @@ footer .big-title {
 	justify-content: space-around;
 }
 
+.footer-nav a:hover {
+	color: white;
+}
+
 
