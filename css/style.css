@@ -193,6 +193,7 @@ ul.menu {
 
 nav a {
 	opacity: 0.7;
+	transition: opacity 0.3s;
 }
 
 nav a:hover {
@@ -207,8 +208,8 @@ nav a:hover {
 	height: 100%;
 	width: 18rem;
 	background-color: #2A1F26;
-	transition:.5s ease all;
-	transform:rotateY(-90deg);
+	transition: all .5s ease;
+	transform: rotateY(-90deg);
 }
 
 .slide-menu-bar {
@@ -225,10 +226,13 @@ nav a:hover {
     display: block;
     margin-bottom: -1px;
     color: rgba(255, 255, 255, 0.7);
+    background-color: #2A1F26;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .slide-menu-bar li a:hover {
 	color: rgba(255, 255, 255, 1);
+	background-color: #0f0b0e;
 }
 
 .site-wrapper {
@@ -239,8 +243,8 @@ nav a:hover {
 }
 
 .site-canvas {
-	transform:translateX(0);
-	transition:.5s ease all;
+	transform: translateX(0);
+	transition: all .5s ease;
 }
 
 .site-wrapper.display-nav .site-canvas {
@@ -248,8 +252,8 @@ nav a:hover {
 }
 
 .site-wrapper.display-nav .slide-menu {
-	transform-origin:100% 50%;
-	transform:perspective(600px) rotateY(0deg);
+	transform-origin: 100% 50%;
+	transform: perspective(600px) rotateY(0deg);
 
 }
 
@@ -399,11 +403,10 @@ footer .big-title {
 	background-color: #CC3935;
 	border: 0px;
 	cursor: pointer; 
-	cursor: hand;
 }
 
 .subscribe-submit:hover {
-	border: 2px solid white;
+	border: 3px solid white;
 }
 
 .site-info {
