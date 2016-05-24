@@ -66,7 +66,7 @@ h2.small-title {
 
 h3.big-title {
 	font-size: 1.5em;
-	font-family: 'Marbre', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Marbre-Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h2.small-title, h3.small-title {
@@ -415,8 +415,9 @@ nav a:hover {
 }
 
 /* Gallery */
-.gallery {
-
+.gallery-container {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .bg-container {
