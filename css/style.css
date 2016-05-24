@@ -487,15 +487,20 @@ nav a:hover {
 }
 
 /* Feature */
-.feature-container {
-	position: relative;
-	width: 80%;
-	height: 0;
-	padding-bottom: 50%;
+.content-wrapper {
+	height: 47.5rem;
+	background-color: #1A181B;
+}
+
+.view-container {
+	width: 95%;
 	margin: 0 auto;
-	display: inline-block;
-	overflow: hidden;
-	background-color: white;
+	padding-top: 7em;
+	padding-bottom: 2em;
+}
+
+.view-container a {
+	font-size: 1.2em;
 }
 
 /* Footer */
