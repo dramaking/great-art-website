@@ -36,6 +36,7 @@ body {
 	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: white;
 	position: relative;
+	background-color: #1A181B;
 }
 
 ul {
@@ -501,6 +502,12 @@ nav a:hover {
 
 .view-container a {
 	font-size: 1.2em;
+}
+
+.image-container {
+	height: 34rem;
+	margin: 0 auto;
+	background-color: white;
 }
 
 /* Footer */
