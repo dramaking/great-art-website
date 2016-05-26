@@ -36,7 +36,6 @@ body {
 	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: white;
 	position: relative;
-	background-color: #1A181B;
 }
 
 ul {
@@ -263,6 +262,9 @@ nav a:hover {
 
 }
 
+.extra-wrapper {
+	background-color: #1A181B;
+}
 
 /* Main Banner */
 .full-section {/*
@@ -483,31 +485,93 @@ nav a:hover {
 }
 
 .info-container a:hover {
-	color: #CC3935;
+	color: #E87058;
     font-weight: bold;
 }
 
 /* Feature */
 .content-wrapper {
-	height: 47.5rem;
+	max-height: 47.5rem;
 	background-color: #1A181B;
+	padding-bottom: 3em;
 }
 
 .view-container {
-	width: 95%;
+	max-width: 68rem;
 	margin: 0 auto;
 	padding-top: 7em;
 	padding-bottom: 2em;
+	padding-left: 2em;
 }
 
 .view-container a {
 	font-size: 1.2em;
 }
 
+.view-container a:hover {
+	color: #E87058;
+}
+
 .image-container {
-	height: 34rem;
+	max-height: 34rem;
 	margin: 0 auto;
-	background-color: white;
+	text-align: center;
+}
+
+
+.image-container img {
+	height: auto;
+	max-height: 34rem;
+	max-width: 100%;
+	display: inline-block;
+	
+}
+
+.l-container {
+	color: #000;
+	width: 50%;
+	max-width: 68rem;
+	margin: 0 auto;
+}
+
+.painting-info {
+	height: 15em;
+	font-size: 1.25em;
+}
+
+.painting-info-row {
+	display: block;
+	margin: 0;
+	line-height: 2em;
+	padding: 0.25em 0;
+	border-top: 1px solid #E6E6E6;
+}
+
+.painting-info-row:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.painting-info-label {
+	width: 40%;
+	float: left;
+	font-weight: bold;
+}
+
+.painting-info-value {
+	margin-left: 0;
+	width: 60%;
+	float: left;
+}
+
+.painting-review {
+	margin-bottom: 6em;
+    border-top: 1px solid #E6E6E6;
+}
+
+.painting-review p {
+	line-height: 1.4;
 }
 
 /* Footer */

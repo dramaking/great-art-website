@@ -11,6 +11,10 @@
 		right: 0;
 	}
 
+	.l-container {
+		width: 60%;
+	}
+
 }
 
 @media screen and (max-width: 58em) {
@@ -36,6 +40,10 @@
 
 	.grid-25 {
 		width: 33.333333%;
+	}
+
+	.l-container {
+		width: 80%;
 	}
 }
 
@@ -103,6 +111,10 @@
 
 	.home-blog-title {
 		margin: 0.5em 0;
+	}
+
+	.l-container {
+		width: 90%;
 	}
 
 	.subscribe-form {

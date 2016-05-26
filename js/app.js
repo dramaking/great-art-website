@@ -9,6 +9,11 @@ var main = function() {
 		}
 	});
 
+	$("#lightgallery").lightGallery({
+		fullScreen: true,
+		zoom: true,
+		download: false
+	});
 	// var movementStrength = 25;
 	// var height = movementStrength / $(window).height();
 	// var width = movementStrength / $(window).width();

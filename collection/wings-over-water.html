@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Collection | Frances Hodgkins | Great Art, Collection of Hubert Humperdinct</title>
+	<title>Wings over Water | Collection | Great Art, Collection of Hubert Humperdinct</title>
 	<meta name=“description=” content=“Discover the finest collection of Frances Hodgkins' paintings and drawings at the Great Art.”>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/media.css">
+	<link rel="stylesheet" type="text/css" href="../css/lightgallery.min.css">
 </head>
 <body>
-	<div class="site-wrapper">
+	<div class="site-wrapper" style="background-color: #FBFBFB;">
 		<div class="site-canvas">
 			<header>
 					<div class="slide-menu">
@@ -50,14 +51,43 @@
 			
 			<section class="content-wrapper">
 				<div class="view-container">
-					<a href="#">
+					<a href="index.html">
 						<i class="fa fa-th-list" aria-hidden="true"></i>&nbsp;View All Collection
 					</a>
 				</div>
-				<div class="image-container">
-					<a href="#">
-						<!-- <img src="../images/wings-over-water.jpg" alt="Wings Over Water"> -->
+				<div class="image-container" id="lightgallery">
+					<a href="../images/wings-over-water.jpg">
+						<img src="../images/wings-over-water.jpg" alt="Wings Over Water" />
 					</a>
+				</div>
+			</section>
+
+			<section class="l-container">
+				<h2 class="big-title">Wings over Water</h2>
+				<div class="painting-info">
+					<dl class="painting-info-row">
+						<dt class="painting-info-label">Artist:</dt>
+						<dd class="painting-info-value">Frances Hodgkins, 1869 - 1947</dd>
+					</dl>
+					<dl class="painting-info-row">
+						<dt class="painting-info-label">Date:</dt>
+						<dd class="painting-info-value">1930</dd>
+					</dl>
+					<dl class="painting-info-row">
+						<dt class="painting-info-label">Medium:</dt>
+						<dd class="painting-info-value">Oil on canvas</dd>
+					</dl>
+					<dl class="painting-info-row">
+						<dt class="painting-info-label">Dimensions:</dt>
+						<dd class="painting-info-value">1100 x 1310 mm</dd>
+					</dl>
+				</div>
+				<div class="painting-review">
+					<p>It is most likely that Hodgkins began the painting of Wings over Water in Bodinnick in 1931 and completed it in London in 1932. Her determination to reach an acceptable conclusion resulted in significant repainting being carried out and the resultant thick paint layer, with textured surface, became a characteristic feature of the artist’s work. Financial constraints had an effect on the choice of materials, but Hodgkins manipulated the qualities of the paints to produce interesting and individual effects. The famous colours, so remarked upon by Eric Newton and others, appear to be the result of a great deal of mixing, with some of the combinations quite ‘queer and surprising’ in themselves.</p>
+
+					<p>When describing Hodgkins’s colours in a retrospective exhibition at the Lefevre Galleries in 1946, critic Eric Newton wrote: ‘She can … make certain colours “sing” as they have never done before – in particular a certain milky purplish-pink, a most unpromising colour: she can make greys and browns look positively rapturous: She can juggle with colour orchestrally’. The colours Hodgkins used were greatly admired, and a similar purplish-pink is found in the Auckland Art Gallery painting Berries and Laurel, c.1930, comprising a variety of colours made milky by the addition of lead white (a bright organic red, carbon black, viridian and a lemon organic yellow). Similarly, in Wings over Water, very few colours are unmixed, the most complex being the greys which include such pigments as Vandyke brown, bone black, vermilion and an organic blue.</p>
+
+					<p>The change in title from In Cornwall could have been due to confusion over time, or perhaps reflected an active poetic preference by the owners of the painting. Whereas in the years following World War One, the title Wings over Water would have brought back memories of warplanes over the Channel, in the early 1930s Hodgkins depicts a more playful moment. The focus of the painting is a parrot looking straight back at the artist, silhouetted by the water behind. The bird is apparently unrestrained and free to fly where it pleases. For an artist who kept moving most of her life, the image of a bird and its associated mobility surely had close personal associations. Wings over Water epitomises much of Frances Hodgkins’s oil painting technique in the 1930s and represents an important moment during the artist’s sojourn in Cornwall.</p>
 				</div>
 			</section>
 			
@@ -88,7 +118,12 @@
 		</div>
 	</div>
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+	<script src="../js/lightgallery.js" type="text/javascript"></script>
+	<script src="../js/lg-fullscreen.js" type="text/javascript"></script>
+	<script src="../js/lg-thumbnail.js" type="text/javascript"></script>
+	<script src="../js/lg-zoom.js" type="text/javascript"></script>
 	<script src="../js/app.js" type="text/javascript"></script>
 </body>
 </html>
