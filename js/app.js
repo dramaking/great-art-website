@@ -9,11 +9,19 @@ var main = function() {
 		}
 	});
 
-	$("#lightgallery").lightGallery({
-		fullScreen: true,
-		zoom: true,
-		download: false
-	});
+	// $('.lightbox').click(function(event) {
+	// 	$('#lightgallery').lightGallery({
+	// 		fullScreen: true,
+	// 		zoom: true,
+	// 		download: false
+	// 	});
+	// });
+
+	// $('#lightgallery').lightGallery({
+	// 	fullScreen: true,
+	// 	zoom: true,
+	// 	download: false
+	// });
 	// var movementStrength = 25;
 	// var height = movementStrength / $(window).height();
 	// var width = movementStrength / $(window).width();
@@ -25,6 +33,5 @@ var main = function() {
  //          $('.full-section').css("background-position", newvalueX+"px     "+newvalueY+"px");
 	// });
 };
-
 
 $(document).ready(main);
