@@ -586,6 +586,7 @@ nav a:hover {
 
 .blog-nav a {
 	font-size: 1.5em;
+	color: #000;
 }
 
 .blog-nav a:hover {
@@ -595,7 +596,8 @@ nav a:hover {
 .blog-container {
 	width: 100%;
 	height: auto;
-
+	background-color: #eee;
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .scale-container {
@@ -617,6 +619,14 @@ nav a:hover {
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
+	color: #000;
+}
+
+.blog-content {
+	display: table-cell;
+	vertical-align: middle;
+	color: #000;
+	padding-right: 2em;
 }
 
 
