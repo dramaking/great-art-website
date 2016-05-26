@@ -535,6 +535,7 @@ nav a:hover {
 	font-size: 1.25em;
 }
 
+
 .painting-info-row {
 	display: block;
 	margin: 0;
@@ -629,6 +630,9 @@ nav a:hover {
 	padding-right: 2em;
 }
 
+.scale-wrapper img {
+	width: 100%;
+}
 
 /* Footer */
 footer {/*
