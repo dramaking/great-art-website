@@ -88,6 +88,13 @@ p {
 	font-size: 3.5em;
 	font-family: 'Marbre-Sans', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	margin-top: .3em;
+	color: white;
+}
+
+.about-heading {
+	font-size: 2.5em;
+	font-family: 'Marbre-Sans', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: white;
 }
 
 a.read-more, a.read-more-red {
@@ -633,7 +640,7 @@ nav a:hover {
 	width: 100%;
 	height: auto;
 	background-color: #eee;
-	border-top: 1px solid rgba(0, 0, 0, 0.3);
+	/*border-top: 1px solid rgba(0, 0, 0, 0.3);*/
 }
 
 .blog-container-2:last-of-type {
@@ -659,7 +666,8 @@ nav a:hover {
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
-	color: #000;
+	color: white;
+	background-color: #1a181b;
 }
 
 .blog-content {
@@ -667,6 +675,7 @@ nav a:hover {
 	vertical-align: middle;
 	color: #000;
 	padding-right: 2em;
+	padding-left: 2em;
 }
 
 .blog-content a {
@@ -713,7 +722,7 @@ nav a:hover {
 	width: 100%;
 	height: auto;
 	background-color: #eee;
-	border-top: 1px solid rgba(0, 0, 0, 0.3);
+	/*border-top: 1px solid rgba(0, 0, 0, 0.3);*/
 }
 
 .out-wrapper {
@@ -733,8 +742,24 @@ nav a:hover {
 	padding-bottom: 30%;
 }
 
+.set-height-37.5 {
+	padding-bottom: 37.5z%;
+}
+
+.set-height-40 {
+	padding-bottom: 40%;
+}
+
+.set-height-20 {
+	padding-bottom: 20%;
+}
+
 .set-height-50 {
 	padding-bottom: 50%;
+}
+
+.set-height-75 {
+	padding-bottom: 75%;
 }
 
 .in-wrapper {
@@ -772,6 +797,21 @@ nav a:hover {
 	padding: 0 5%;
 }
 
+.quote {
+	/*background-color: #32212b;*/
+	/*background-color: #872633;*/
+	background-color: white;
+	color: #777777;
+}
+
+.period {
+	background-color: #1a181b;
+}
+
+/* About */
+/*.vertical-wrapper {
+	display: flex;
+}*/
 
 
 /* Footer */
