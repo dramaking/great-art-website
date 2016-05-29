@@ -640,7 +640,7 @@ nav a:hover {
 	width: 100%;
 	height: auto;
 	background-color: #eee;
-	/*border-top: 1px solid rgba(0, 0, 0, 0.3);*/
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .blog-container-2:last-of-type {
@@ -722,6 +722,7 @@ nav a:hover {
 	width: 100%;
 	height: auto;
 	background-color: #eee;
+	/*margin-top: -1px;*/
 	/*border-top: 1px solid rgba(0, 0, 0, 0.3);*/
 }
 
@@ -798,10 +799,11 @@ nav a:hover {
 }
 
 .quote {
-	/*background-color: #32212b;*/
+	background-color: #32212b;
+	color: white;
 	/*background-color: #872633;*/
-	background-color: white;
-	color: #777777;
+	/*background-color: white;
+	color: #777777;*/
 }
 
 .period {
