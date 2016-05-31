@@ -7,6 +7,10 @@ h1, h2, h3 {
 	font-weight: normal;
 }
 
+html, body {
+	height: 100%;
+}
+
 /* Font */
 @font-face {
     font-family: 'Marbre';
@@ -287,15 +291,41 @@ nav a:hover {
 	top: -4.375em;*/
 	width: 100%;
 	height: 47.5em;
-	background-image: url("../images/still-life-self-portrait.jpeg");
-	background-size: cover;
+	/*background-image: url("../images/still-life-self-portrait.jpeg");*/
+	/*background-size: cover;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+/*	position: relative;
+	overflow: hidden;
+	z-index: 1;*/
+}
+
+.vision {
+	position: relative;
+	overflow: hidden;
+}
+
+.vision:before {
+	content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    opacity: 0;
+    background-color: #222;
+    );
+    /*background-image: radial-gradient(
+    	rgba(0, 0, 0, 1), 
+    	rgba(0, 0, 0, 0)
+    	);*/
+    /*transition: opacity 0.3s linear;*/
 }
 
 .main-title {
-	/*width: 100%;*/
 	text-align: center;
 }
 
@@ -351,9 +381,6 @@ nav a:hover {
 }
 
 /* Full Section */
-.module {
-
-}
 
 .home-story {
 	background: #87614E;

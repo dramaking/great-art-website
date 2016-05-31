@@ -1,9 +1,9 @@
 @media screen and (max-width: 87.5em) {
-	.home-blog-title {
+	.margin-0 {
 		margin: 0;
 	}
 
-	.blog-container .read-more-red {
+	.blog-content .read-more-red {
 		margin-top: 0;
 	}
 }
