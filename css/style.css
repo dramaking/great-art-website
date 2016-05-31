@@ -234,7 +234,7 @@ nav a:hover {
 	width: 18rem;
 	background-color: #2A1F26;
 	transition: all .5s ease;
-	transform: rotateY(-90deg);
+	/*transform: rotateY(-90deg);*/
 }
 
 .slide-menu-bar {
@@ -277,9 +277,8 @@ nav a:hover {
 }
 
 .site-wrapper.display-nav .slide-menu {
-	transform-origin: 100% 50%;
-	transform: perspective(600px) rotateY(0deg);
-
+	/*transform-origin: 100% 50%;*/
+	/*transform: perspective(600px) rotateY(0deg);*/
 }
 
 /* Main Banner */
@@ -332,6 +331,10 @@ nav a:hover {
 }
 
 .grid-50 {
+	width: 50%;
+}
+
+.grid-50-2 {
 	width: 50%;
 }
 
