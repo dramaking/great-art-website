@@ -223,14 +223,6 @@
 		display: none;
 	}
 
-	.blog-nav {
-		width: 100%;
-	}
-
-	/*.in-wrapper img {
-		display: none;
-	}*/
-
 	#disable {
 		display: none;
 	}
@@ -262,6 +254,20 @@
 	.m-height-25 {
     	padding-bottom: 20em;
 	}
+
+	.blog-nav-container {
+		display: none;
+	}
+
+	.blog-nav-trigger {
+		display: block;
+	}
+
+	.blog-nav-mobile {
+		display: block;
+	}
+
+
 
 }
 

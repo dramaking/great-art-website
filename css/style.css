@@ -173,6 +173,7 @@ header {
 	left: 1%;
 	right: 1%;
 	z-index: 10;
+	/*overflow: hidden;*/
 }
 
 .nav-icon {
@@ -235,6 +236,7 @@ nav a:hover {
 	/*top: 3.5rem;*/
 	left: -18rem;
 	height: 100%;
+	overflow: hidden;
 	width: 18rem;
 	background-color: #2A1F26;
 	transition: all .5s ease;
@@ -641,8 +643,57 @@ nav a:hover {
 }
 
 /* Blog Page */
+.blog-nav-trigger {
+	display: none;
+	text-align: center;
+}
+
+.blog-nav-trigger span {
+	display: inline-block;
+	font-size: 1.5em;
+	padding: 1em 0.7em;
+	background-color: white;
+	color: #E87058;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.blog-nav-trigger span:after {
+	display: inline-block;
+    margin-left: 0.5em;
+    /*width: 1em;
+    height: .5em;*/
+    content: "";
+    border-left: solid 10px transparent;
+    border-top: solid 10px #E87058;
+    border-right: solid 10px transparent;
+}
+
+.blog-nav-trigger span:hover, .blog-nav-trigger span:active {
+	background-color: #E87058;
+	color: white;
+}
+
+.blog-nav-trigger span:hover:after {
+	border-left: solid 10px transparent;
+    border-top: solid 10px white;
+    border-right: solid 10px transparent;
+}
+
+.blog-nav-trigger span.open:after {
+	border-left: solid 10px transparent;
+    border-top: none;
+    border-bottom: solid 10px #fff;
+    border-right: solid 10px transparent;
+}
+
+.blog-nav-trigger span.update{
+	color: #fff;
+	background-color: #E87058;
+}
+
 .blog-nav-container {
-	margin: 2em 0;
+	margin: 0 0 2em 0;
 }
 
 .blog-nav {
@@ -650,18 +701,64 @@ nav a:hover {
 	justify-content: space-around;
 	width: 50%;
 	margin: 0 auto;
-	height: 3em;
-	padding: 0;
+	padding: 0 2em;
+	background-color: #E87058;
+}
 
+.blog-nav li {
+	display: inline-block;
+	padding: 0.5em 0.5em 0 0.5em;
+}
+
+.blog-nav a:last-child {
+	border-right: none;
 }
 
 .blog-nav a {
+	display: block;
+	padding: 1em 0.5em 1.5em 0.5em;
 	font-size: 1.5em;
-	color: #000;
+	color: white;
+	border-right: 1px solid #CC3935;
 }
 
 .blog-nav a:hover {
 	color: #E87058;
+	background-color: white;
+}
+
+.blog-nav-mobile {
+	display: none;
+	position: relative;
+	z-index: 3;
+}
+
+.blog-nav-mobile ul {
+	display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #E87058;
+}
+
+.blog-nav-mobile li {
+	display: block;
+    padding: .3em 0;
+    margin: 0 .3em;
+}
+
+.blog-nav-mobile a {
+	display: block;
+    color: white;
+    padding: .625em 2em;
+}
+
+.blog-nav-mobile a:hover {
+	color: #E87058;
+	background-color: white;
 }
 
 .blog-container-2 {
