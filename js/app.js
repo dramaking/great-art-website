@@ -38,6 +38,40 @@ var main = function() {
         }
     });
 
+    var moveUp = {
+    	origin: 'bottom',
+    	distance: '100%',
+    	duration: 800,
+    	scale: 1,
+    	easing: 'ease'
+    }
+
+    var moveLeft = {
+    	origin: 'right',
+    	distance: '100%',
+    	duration: 800,
+    	scale: 1,
+    	easing: 'ease'
+    }
+
+    var moveRight = {
+    	origin: 'left',
+    	distance: '100%',
+    	duration: 800,
+    	scale: 1,
+    	easing: 'ease'
+    }
+
+    window.sr = ScrollReveal();
+    sr.reveal('.reveal');
+    sr.reveal('.moveUp', moveUp);
+    sr.reveal('.in-wrapper p', moveUp);
+    sr.reveal('.blog-content', moveUp);
+    sr.reveal('.date-wrapper', moveRight);
+    sr.reveal('.moveLeft', moveLeft);
+    sr.reveal('.moveRight', moveRight);
+
+
 };
 
 $(document).ready(main);
