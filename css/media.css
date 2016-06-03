@@ -249,11 +249,11 @@
 		display: none;
 	}
 
-	#disable {
+	.disable {
 		display: none;
 	}
 
-	#m-width-100 {
+	.m-width-100 {
 		width: 100%;
 	}
 
