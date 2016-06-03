@@ -63,8 +63,12 @@
 @media screen and (max-width: 48em) {
 	
 	.grid-container, .blog-container {
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		height: 50em;
 	}
 
@@ -106,11 +110,15 @@
 	}
 
 	.home-jugs {
-		order: -1;
+		-webkit-order: -1;
+		    -ms-flex-order: -1;
+		        order: -1;
 	}
 
 	.home-blog {
-		flex-direction: column;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.col-1-4 {
@@ -122,6 +130,8 @@
 	}
 
 	.blog-date {
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
@@ -139,9 +149,15 @@
 	}
 
 	.subscribe-form {
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		height: 10em;
 	}
 
@@ -159,7 +175,9 @@
     }
 
     .footer-nav {
-    	flex-direction: column;
+    	-webkit-flex-direction: column;
+    	    -ms-flex-direction: column;
+    	        flex-direction: column;
     	margin: 1em auto;
     }
 
@@ -174,6 +192,8 @@
 	    height: 100%;
 	}*/
 	.blog-container-2 {
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;/*
 		flex-direction: column;*/
 	}
@@ -201,9 +221,15 @@
 	}
 
 	.date-wrapper {
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		align-items: center;
-		justify-content: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		height: 100%;
 	}
 
@@ -236,11 +262,15 @@
 	}
 
 	.full-wrapper {
-		flex-direction: column;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.last-order {
-		order: 1;
+		-webkit-order: 1;
+		    -ms-flex-order: 1;
+		        order: 1;
 	}
 
 	.m-height-30 {
